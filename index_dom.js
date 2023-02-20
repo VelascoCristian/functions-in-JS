@@ -1,6 +1,6 @@
 import hamburguerMenu from "./hamburger_menu.js";
 import { digitalClock, alarm } from "./reloj.js";
-import { shortcuts, moveBall } from "./keyboard";
+import { shortcuts, moveBall } from "./keyboard.js";
 import countdown from "./count_down_time.js";
 import scrollTopButton from "./button_scroll.js";
 import darkTheme from "./dark-theme.js";
@@ -13,9 +13,9 @@ d.addEventListener("DOMContentLoaded", (e) => {
     digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj");
     alarm("assets/alarma.mp3", "#activar-alarma", "#desactivar-alarma");
     countdown("countdown", "May 23, 2023, 03:23:19", "Feliz cumpleaños");
-    scrollTopButton(".scroll-top-btn");
-    responsiveMedia("youtube", "(min-width: 1024px)", "Contenido Móvil", "Contenido Escritorio");
-    responsiveMedia("gmaps", "(min-width: 1024px)", "Contenido Móvil", "Contenido Escritorio");
+    scrollTopButton(".scroll-top-btn");                // Movil                                                                                   - Desktop                 
+    responsiveMedia("youtube", "(min-width: 1024px)", `<a href="https://www.youtube.com/embed/f6QFfmwFT3k" target="_blank">Ver Video</a>`, `<iframe width="560" height="315" src="https://www.youtube.com/embed/f6QFfmwFT3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`);
+    responsiveMedia("gmaps", "(min-width: 1024px)", `<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53356.94560016026!2d-66.30966570000001!3d-33.2976569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses-419!2sar!4v1676673956135!5m2!1ses-419!2sar" target="_blank">Ver Mapa</a>`, `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53356.94560016026!2d-66.30966570000001!3d-33.2976569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses-419!2sar!4v1676673956135!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
 });
 
 d.addEventListener("keydown", (e) => {
