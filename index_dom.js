@@ -11,6 +11,7 @@ import networkStatus from "./network_detection.js";
 import webCam from "./webcam_detection.js";
 import getGeolocation from "./geolocation.js";
 import searchFilter from "./search_filter.js";
+import draw from "./lottery.js";
 
 const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -27,6 +28,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     webCam("webcam");
     getGeolocation("geolocation");
     searchFilter(".card-filter", ".card");
+    draw("#winner-btn", ".player");
 });
 
 d.addEventListener("keydown", (e) => {
