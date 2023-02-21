@@ -8,6 +8,7 @@ import responsiveMedia from "./object_responsive.js";
 import responsiveTester from "./responsive_test.js";
 import userDeviceInfo from "./device_detection.js";
 import networkStatus from "./network_detection.js";
+import webCam from "./webcam_detection.js";
 
 const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -21,6 +22,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     responsiveMedia("gmaps", "(min-width: 1024px)", `<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53356.94560016026!2d-66.30966570000001!3d-33.2976569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses-419!2sar!4v1676673956135!5m2!1ses-419!2sar" target="_blank">Ver Mapa</a>`, `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53356.94560016026!2d-66.30966570000001!3d-33.2976569!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95d43954196ca6cd%3A0x7fc2e3b4d49ecc83!2sSan%20Luis!5e0!3m2!1ses-419!2sar!4v1676673956135!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
     responsiveTester("responsive-tester");
     userDeviceInfo("user-device");
+    webCam("webcam");
 });
 
 d.addEventListener("keydown", (e) => {
