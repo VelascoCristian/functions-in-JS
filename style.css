@@ -61,6 +61,7 @@ header {
     background-color: var(--second-modal-color);
     bottom: 0;
     left: 0;
+    overflow-y: auto;
     position: fixed;
     right: 0;
     top: 0;
