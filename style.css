@@ -39,6 +39,7 @@ header {
     padding: 1rem;
     position: sticky;
     top: 0;
+    z-index: 997;
 }
 
 .header h1 {
@@ -237,4 +238,67 @@ header {
     opacity: 0;
     order: 1;
     visibility: hidden;
+}
+
+/* Responsive slider */
+.slider {
+    margin: 1rem auto;
+    position: relative;
+    text-align: center;
+    width: 85%;
+}
+
+.slider-slides {
+    height: 400px;
+    position: relative;
+}
+
+.slider-slide {
+    
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transition: opacity 1s ease;
+    visibility: hidden;
+    width: 100%;
+}
+
+.slider-slide img {
+    height: inherit;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: inherit;
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider-btns {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+}
+
+.slider a {
+    background-color: #fff;
+    border: thin solid #000;
+    border-radius: 50%;
+    color: #000;
+    display: block;
+    height: 4rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: 4rem;
+}
+
+slider a:hover {
+    color: #4d4d4d;
 }
