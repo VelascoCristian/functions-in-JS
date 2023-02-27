@@ -14,6 +14,7 @@ import searchFilter from "./search_filter.js";
 import draw from "./lottery.js";
 import slider from "./carrousel.js";
 import scrollSpy from "./scroll_spy.js";
+import smartVideo from "./automatic_videos.js";
 
 const d = document;
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -33,6 +34,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
     draw("#winner-btn", ".player");
     slider();
     scrollSpy();
+    smartVideo();
 });
 
 d.addEventListener("keydown", (e) => {
