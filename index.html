@@ -31,6 +31,7 @@
             <a href="#sección11" data-scroll-spy>Digital Raffle</a>
             <a href="#sección12" data-scroll-spy>Responsive Slider</a>
             <a href="#sección13" data-scroll-spy>Automatic Video</a>
+            <a href="#sección14" data-scroll-spy>Form Validations</a>
         </nav>
     </aside>
     <main>
@@ -194,7 +195,21 @@
             <video src="assets/little_cat.mp4" muted controls loop data-smart-video></video>
         </section>
         <section id="sección14" class="section" data-scroll-spy>
-            <h2>Geolocation</h2>
+            <h2>Form Validations</h2>
+            <form class="contact-form">
+                <legend>Send your comments</legend>
+                <input type="text" name="name" placeholder="Write your name" required title="The name only accepts letters and blank space" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$">
+                <input type="email" name="email" placeholder="Write your email" title="Incorrect email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+                <input type="text" name="subject" placeholder="Write the subject" title="The subject is required" required>
+                <textarea name="comments" cols="50" rows="5" placeholder="Write your comments" data-pattern="^.{1,255}$" required title="Your comment can't exceed 255 characters"></textarea>
+                <input type="submit">
+                <div class="contact-form-loader none">
+                    <img src="assets/loaders.gif" alt="Loading">
+                </div>
+                <div class="contact-form-response none">
+                    <p>Data sent</p>
+                </div>
+            </form>
         </section>
     </main>
     <button class="scroll-top-btn hidden">&#11014</button>
