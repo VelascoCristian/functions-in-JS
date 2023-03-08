@@ -1,0 +1,68 @@
+<div class="slider">
+  <div class="slider-slides">
+    <div class="slider-slide active">
+      <img src="assets/pizza_service_1.jpg" alt="pizza_1" />
+    </div>
+    <div class="slider-slide">
+      <img src="assets/pizza_service_2.jpg" alt="pizza_2" />
+    </div>
+    <div class="slider-slide">
+      <img src="assets/pizza_service_3.png" alt="carta" />
+    </div>
+  </div>
+  <div class="slider-btns">
+    <a class="prev" href="#">&laquo</a>
+    <a class="next" href="#">&raquo</a>
+  </div>
+</div>
+<script>
+  /*d.addEventListener("click", (e) => {
+    if (e.target.matches(".slider-btns .prev")) {
+      alert("ASD");
+      const $nextBtn = d.querySelector(".slider-btns .next"),
+        $prevBtn = d.querySelector(".slider-btns .prev"),
+        $slides = d.querySelectorAll(".slider-slide");
+
+      let count = 0;
+      d.addEventListener("click", (e) => {
+        if (e.target === $prevBtn) {
+          e.preventDefault();
+          $slides[count].classList.remove("active");
+          count--;
+
+          if (count <= 0) count = $slides.length - 1;
+
+          $slides[count].classList.add("active");
+        }
+
+        if (e.target === $nextBtn) {
+          e.preventDefault();
+          $slides[count].classList.remove("active");
+          count++;
+
+          if (count >= $slides.length) count = 0;
+
+          $slides[count].classList.add("active");
+        }
+      });
+
+      //As long as there is no interaction, the slider will continue to move forward
+      let sliderInterval;
+      function nextSlide() {
+        $slides[count].classList.remove("active");
+        count++;
+
+        if (count >= $slides.length) count = 0;
+
+        $slides[count].classList.add("active");
+      }
+
+      sliderInterval = setInterval(nextSlide, 4500);
+
+      $nextBtn.addEventListener("click", () => {
+        clearInterval(sliderInterval);
+        nextSlide();
+      });
+    }
+  });*/
+</script>
